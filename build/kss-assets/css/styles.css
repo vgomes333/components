@@ -1,0 +1,73 @@
+.btn {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: #4285f4;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  padding: 6px 6px;
+  display: inline-block;
+  min-width: 80px;
+  cursor: pointer;
+  background-color: #FFF;
+  border-color: #d7d7d7; }
+  .btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.6; }
+  .btn:hover {
+    opacity: 0.8; }
+  .btn-green {
+    color: #fff;
+    background-color: #42AE5D;
+    border-color: #42AE5D; }
+  .btn-block {
+    display: block; }
+  .btn-medium {
+    font-size: 16px;
+    padding: 8px 10px; }
+  .btn-large {
+    font-size: 20px;
+    padding: 8px 12px; }
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 11; }
+
+.modal {
+  overflow: auto; }
+  .modal .modal-box {
+    position: relative;
+    width: 90%;
+    max-width: 580px;
+    margin: 100px auto;
+    background-color: #FFF;
+    padding: 0 24px;
+    animation: modalbox .3s ease-out;
+    border-radius: 6px; }
+  .modal .modal-header {
+    padding: 24px 0 10px; }
+    .modal .modal-header .modal-header-title {
+      font-size: 24px;
+      color: #0c304a; }
+  .modal .modal-body {
+    font-size: 16px;
+    line-height: 22px; }
+  .modal .modal-footer {
+    text-align: right;
+    padding: 24px 0; }
+    .modal .modal-footer .btn:last-child {
+      margin-left: 12px; }
+  .modal .formGroup {
+    margin-bottom: 24px; }
+    .modal .formGroup label {
+      font-size: 16px;
+      margin-bottom: 6px;
+      display: block; }
+    .modal .formGroup input {
+      width: 100%; }

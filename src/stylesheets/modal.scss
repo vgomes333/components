@@ -1,0 +1,89 @@
+// Modal
+// 
+// Markup:
+//<div class="modal" id="modal">
+//    <div class="modal-box">
+//        <div class="modal-header">
+//            <h3 class="modal-header-title">
+//                Titulo do Modal
+//            </h3>
+//        </div>
+//        <div ng-transclude>
+//            <div class="modal-body">
+//                <div class="formGroup">
+//                    <label>Qual é o nome do Personagem?</label>
+//                    <input type="text">
+//            </div>
+//            <div class="modal-footer">
+//                <button class="btn">Cancelar</button>
+//                <button class="btn btn-green">Confirmar</button>
+//            </div>
+//        </div>
+//    </div>
+//</div> 
+// 
+// Styleguide Modal
+
+%overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 11;
+}
+
+.modal {
+    overflow: auto;
+    @extend %overlay;
+
+    .modal-box {
+        position: relative;
+        width: 90%;
+        max-width: 580px;
+        margin: 100px auto;
+        background-color: #FFF;
+        padding: 0 24px;
+        animation: modalbox .3s ease-out;
+        border-radius: 6px;
+    }
+
+    .modal-header {
+        padding: 24px 0 10px;
+
+        .modal-header-title {
+            font-size: 24px;
+            color: #0c304a;
+        }
+    }
+
+    .modal-body {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .modal-footer {
+        text-align: right;
+        padding: 24px 0;
+
+        .btn {
+            &:last-child {
+                margin-left: 12px;
+            }
+        }
+    }
+
+    .formGroup {
+        margin-bottom: 24px;
+    
+        label {
+            font-size: 16px;
+            margin-bottom: 6px;
+            display: block;
+        }
+        input{
+            width: 100%;
+        }
+    }
+}

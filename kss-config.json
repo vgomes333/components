@@ -1,0 +1,21 @@
+{
+  "title":"Components Mult-e",
+  "placeholder"  : "",
+
+
+    "source": "src/",
+    "destination":"./build",
+    "builder": "src/kss_styleguide/",
+
+
+  "homepage"     : "kss-homepage.md",
+
+
+    "css":[
+      "kss-assets/css/styles.css"
+    ],
+
+    "js":[
+      "kss-assets/js/kss.js"
+    ]
+}
