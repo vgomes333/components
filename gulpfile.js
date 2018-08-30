@@ -14,15 +14,14 @@ gulp.task('server', ['kss'], function () {
         
     });
 
-    
     gulp.watch('src/kss_styleguide/custom-template/index.hbs',['kss']).on('change',browserSync.reload);
-    gulp.watch('./src/stylesheets/*.scss',['kss']).on('change',browserSync.reload);
+    gulp.watch('./src/css-components/*.scss',['kss']).on('change',browserSync.reload);
     gulp.watch('src/kss_styleguide/custom-template/kss-assets/css/*.scss',['kss']).on('change',browserSync.reload);
 });
 
 // Cria a pasta build
 gulp.task('kss',['sass'], function() {    
-    gulp.src('./src/stylesheets/styles.css')
+    gulp.src('./src/css-components/styles.css')
     .pipe(gulp.dest('./build/kss-assets/css'));
 
     return run('npm run kss').exec();
@@ -30,9 +29,9 @@ gulp.task('kss',['sass'], function() {
   
 //   Compila o arquivo Styles.scss e gera o Styles.css
   gulp.task('sass',function(){
-    return gulp.src('src/stylesheets/styles.scss')
+    return gulp.src('src/css-components/styles.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('src/stylesheets/'))
+    .pipe(gulp.dest('src/css-components/'))
     .pipe(browserSync.stream());
     });
     

@@ -5,10 +5,10 @@
 
     "source": "src/",
     "destination":"./build",
-    "builder": "src/kss_styleguide/",
+    "builder": "src/app/",
 
 
-  "homepage"     : "kss-homepage.md",
+  "homepage"     : "homepage.md",
 
 
     "css":[
