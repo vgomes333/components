@@ -14,9 +14,7 @@ gulp.task('server', ['kss'], function () {
         
     });
 
-    gulp.watch('src/kss_styleguide/custom-template/index.hbs',['kss']).on('change',browserSync.reload);
-    gulp.watch('./src/css-components/*.scss',['kss']).on('change',browserSync.reload);
-    gulp.watch('src/kss_styleguide/custom-template/kss-assets/css/*.scss',['kss']).on('change',browserSync.reload);
+    gulp.watch('src/css-components/**/*.scss',['kss']).on('change',browserSync.reload);
 });
 
 // Cria a pasta build

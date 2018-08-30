@@ -101,6 +101,9 @@
                                     </h1>
                                 </a>
 
+                                    <div
+                                        class="kss-section__description"><p>Descrição do Componente</p>
+</div>
 
                             </article>
 
@@ -109,46 +112,42 @@
                                     </h1>
 
 
-                                    <div class="kss-modifiers__example"><div class="modal" id="modal">
-   <div class="modal-box">
-       <div class="modal-header">
+                                    <div class="kss-modifiers__example"><button class="btn" id="btnModal">Open Modal</button>
+<div class="modal" id="modal">
+ <div class="modal-box">
+     <div class="modal-header">
+           <span class="closeModal"><i class="fas fa-times-circle"></i></span>
            <h3 class="modal-header-title">
                Titulo do Modal
            </h3>
-       </div>
-       <div ng-transclude>
-           <div class="modal-body">
-               <div class="formGroup">
-                   <label>Qual é o nome do Personagem?</label>
-                   <input type="text">
-           </div>
-           <div class="modal-footer">
-               <button class="btn">Cancelar</button>
-               <button class="btn btn-green">Confirmar</button>
-           </div>
-       </div>
-   </div>
+     </div>
+     <div class="modal-body">
+         <h1>CORPO DO MODAL</h1>
+     </div>
+     <div class="modal-footer">
+         <button class="btn">Cancelar</button>
+         <button class="btn btn-green">Confirmar</button>
+     </div>
+ </div>
 </div></div>
                                     <div class="div-markup">
-                                        <code id="clipboard-default-0" class="language-markup">&lt;div class&#x3D;&quot;modal&quot; id&#x3D;&quot;modal&quot;&gt;
-   &lt;div class&#x3D;&quot;modal-box&quot;&gt;
-       &lt;div class&#x3D;&quot;modal-header&quot;&gt;
+                                        <code id="clipboard-default-0" class="language-markup">&lt;button class&#x3D;&quot;btn&quot; id&#x3D;&quot;btnModal&quot;&gt;Open Modal&lt;/button&gt;
+&lt;div class&#x3D;&quot;modal&quot; id&#x3D;&quot;modal&quot;&gt;
+ &lt;div class&#x3D;&quot;modal-box&quot;&gt;
+     &lt;div class&#x3D;&quot;modal-header&quot;&gt;
+           &lt;span class&#x3D;&quot;closeModal&quot;&gt;&lt;i class&#x3D;&quot;fas fa-times-circle&quot;&gt;&lt;/i&gt;&lt;/span&gt;
            &lt;h3 class&#x3D;&quot;modal-header-title&quot;&gt;
                Titulo do Modal
            &lt;/h3&gt;
-       &lt;/div&gt;
-       &lt;div ng-transclude&gt;
-           &lt;div class&#x3D;&quot;modal-body&quot;&gt;
-               &lt;div class&#x3D;&quot;formGroup&quot;&gt;
-                   &lt;label&gt;Qual é o nome do Personagem?&lt;/label&gt;
-                   &lt;input type&#x3D;&quot;text&quot;&gt;
-           &lt;/div&gt;
-           &lt;div class&#x3D;&quot;modal-footer&quot;&gt;
-               &lt;button class&#x3D;&quot;btn&quot;&gt;Cancelar&lt;/button&gt;
-               &lt;button class&#x3D;&quot;btn btn-green&quot;&gt;Confirmar&lt;/button&gt;
-           &lt;/div&gt;
-       &lt;/div&gt;
-   &lt;/div&gt;
+     &lt;/div&gt;
+     &lt;div class&#x3D;&quot;modal-body&quot;&gt;
+         &lt;h1&gt;CORPO DO MODAL&lt;/h1&gt;
+     &lt;/div&gt;
+     &lt;div class&#x3D;&quot;modal-footer&quot;&gt;
+         &lt;button class&#x3D;&quot;btn&quot;&gt;Cancelar&lt;/button&gt;
+         &lt;button class&#x3D;&quot;btn btn-green&quot;&gt;Confirmar&lt;/button&gt;
+     &lt;/div&gt;
+ &lt;/div&gt;
 &lt;/div&gt;</code>
                                         <a class="clipboard-btn" data-clipboard-target="#clipboard-default-0">
                                             <i class="fas fa-clipboard"></i>
@@ -165,6 +164,7 @@
         <script src="kss-assets/vendor/jquery.js"></script>
         <script src="kss-assets/vendor/prism.js"></script>
         <script src="kss-assets/js/kss.js"></script>
+        <script src="kss-assets/js/openModal.js"></script>
 
         <script src="kss-assets/js/kss.js"></script>
 

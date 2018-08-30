@@ -40,7 +40,8 @@
   z-index: 11; }
 
 .modal {
-  overflow: auto; }
+  overflow: auto;
+  display: none; }
   .modal .modal-box {
     position: relative;
     width: 90%;
@@ -55,6 +56,9 @@
     .modal .modal-header .modal-header-title {
       font-size: 24px;
       color: #0c304a; }
+    .modal .modal-header .closeModal {
+      font-size: 22px;
+      float: right; }
   .modal .modal-body {
     font-size: 16px;
     line-height: 22px; }

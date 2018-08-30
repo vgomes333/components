@@ -1,26 +1,26 @@
 // Modal
 // 
+// Descrição do Componente
+// 
 // Markup:
+//<button class="btn" id="btnModal">Open Modal</button>
 //<div class="modal" id="modal">
-//    <div class="modal-box">
-//        <div class="modal-header">
+//  <div class="modal-box">
+//      <div class="modal-header">
+//            <span class="closeModal"><i class="fas fa-times-circle"></i></span>
 //            <h3 class="modal-header-title">
 //                Titulo do Modal
 //            </h3>
-//        </div>
-//        <div ng-transclude>
-//            <div class="modal-body">
-//                <div class="formGroup">
-//                    <label>Qual é o nome do Personagem?</label>
-//                    <input type="text">
-//            </div>
-//            <div class="modal-footer">
-//                <button class="btn">Cancelar</button>
-//                <button class="btn btn-green">Confirmar</button>
-//            </div>
-//        </div>
-//    </div>
-//</div> 
+//      </div>
+//      <div class="modal-body">
+//          <h1>CORPO DO MODAL</h1>
+//      </div>
+//      <div class="modal-footer">
+//          <button class="btn">Cancelar</button>
+//          <button class="btn btn-green">Confirmar</button>
+//      </div>
+//  </div>
+//</div>
 // 
 // Styleguide Modal
 
@@ -37,6 +37,7 @@
 .modal {
     overflow: auto;
     @extend %overlay;
+    display: none;
 
     .modal-box {
         position: relative;
@@ -55,6 +56,11 @@
         .modal-header-title {
             font-size: 24px;
             color: #0c304a;
+        }
+
+        .closeModal{
+            font-size: 22px;
+            float: right;
         }
     }
 
