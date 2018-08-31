@@ -19,8 +19,6 @@
 </head>
 
 <body class="kss-body">
-
-    <!-- header. -->
             <header class="kss-header">
         <section class="kss-header__inner">
             <a class="kss-header__hamburger-trigger">
@@ -28,19 +26,11 @@
             </a>
         </section>
     </header>
-    <!-- /header. -->
-
-    <!-- navigation. -->
         <section class="nav-sidebar">
             <img
                 class="nav-sidebar-logo"
                 src="https://avatars0.githubusercontent.com/u/31484249?s=460&v=4"
                 alt="Mult-e Logo">
-            <span class="nav-sidebar-tittle">
-                Styleguide
-                <br>
-                Mult-e
-            </span>
             <ul class="kss-nav">
                 <li class="kss-nav__item">
                     <a href="index.html">
@@ -74,12 +64,9 @@
                     </li>
             </ul>
         </section>
-    <!-- /navigation. -->
-
-    <!-- documentation. -->
-    <section class="kss-documentation">
-        <article class="kss-markdown">
-            <h1>Make your life easier with styleguides</h1>
+        <section class="kss-documentation">
+    <article class="kss-markdown">
+        <h1>Make your life easier with styleguides</h1>
 <h2>Whaaaat, styleguides?</h2>
 <p>Styleguides can be seen as a roadmap for developers and designers to maintain consistency on their code and UI. Some styleguides are built in static HTML, but this is difficult to maintain. A better solution would be a living styleguide, which is auto-generated from the comments in your codebase.</p>
 <h2>But why?</h2>
@@ -118,15 +105,21 @@
 <p>You have finished the setup. From here on out you can start writing the documentation*. I would love to explain it all in detail to you, but you know.. pizza!</p>
 <p>*<em>To get familiar with the documentation syntax it is highly advised to read through <a href="https://github.com/kss-node/kss/blob/spec/SPEC.md">the annotated copy of the official KSS spec on the KSS-node repository</a>.</em></p>
 
-        </article>
-    </section>
-    <!-- /documentation. -->
+    </article>
+</section>
+        <!-- scripts. -->
+<script src="kss-assets/vendor/jquery.js"></script>
+<script src="kss-assets/vendor/prism.js"></script>
+<script src="kss-assets/js/kss.js"></script>
+<script src="kss-assets/js/openModal.js"></script>
 
-
-</body>
 <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
 <script type="text/javascript">
     new ClipboardJS('.clipboard-btn');
 </script>
 
+<script src="kss-assets/js/kss.js"></script>
+
+<!-- /scripts. -->
+</body>
 </html>

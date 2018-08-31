@@ -19,8 +19,6 @@
 </head>
 
 <body class="kss-body">
-
-    <!-- header. -->
             <header class="kss-header">
         <section class="kss-header__inner">
             <a class="kss-header__hamburger-trigger">
@@ -28,19 +26,11 @@
             </a>
         </section>
     </header>
-    <!-- /header. -->
-
-    <!-- navigation. -->
         <section class="nav-sidebar">
             <img
                 class="nav-sidebar-logo"
                 src="https://avatars0.githubusercontent.com/u/31484249?s=460&v=4"
                 alt="Mult-e Logo">
-            <span class="nav-sidebar-tittle">
-                Styleguide
-                <br>
-                Mult-e
-            </span>
             <ul class="kss-nav">
                 <li class="kss-nav__item">
                     <a href="index.html">
@@ -74,65 +64,85 @@
                     </li>
             </ul>
         </section>
-    <!-- /navigation. -->
+        <section class="kss-documentation">
 
-    <!-- documentation. -->
-    <section class="kss-documentation">
-
-        <!-- display each section, in order. the "root" element comes first in this
+    <!-- display each section, in order. the "root" element comes first in this
                 loop, and can be detected using the "#if @first" block as seen below. -->
-        <header class="kss-section kss-section--depth-1" id="kssref-colors">
+    <header class="kss-section kss-section--depth-1" id="kssref-colors">
 
-                <article class="kss-section__content">
-                    <p class="kss-section__source">Source:
-                        <span>css-components/colors.scss</span>, line
-                        <span>1</span></p>
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source:
+                    <span>
+                        css-components/_colors.scss
+                    </span>, line
+                    <span>
+                        1
+                    </span>
+                </p>
 
-                    <a class="kss-section__permalink" href="#kssref-colors">
-                        <h 1 class="kss-section__item kss-section__item--depth-1">
-                            <span class="kss-section__ref">3</span>
-                            <span class="kss-section__name">Colors</span>
-                        </h 1>
-                    </a>
+                <a class="kss-section__permalink" href="#kssref-colors">
+                    <h 1 class="kss-section__item kss-section__item--depth-1">
+                        <span class="kss-section__ref">
+                            3
+                        </span>
 
-                    <div class="kss-section__description"><p>Colors we use for higlighting states.</p>
-</div>
+                        <span class="kss-section__name">
+                            Colors
+                        </span>
+                    </h 1>
+                </a>
 
-                    <ul class="kss-parameters">
-                        <li class="kss-parameters__item">
-                            <p class="kss-parameters__description">
-                                #1460aa; Primary Blue
+                <div class="kss-section__description
+                            
+                            ">
+                    <p>Colors we use for higlighting states.</p>
 
-                            </p>
-                            <code class="kss-parameters__name">$highlight-blue</code>
-                        </li>
-                        <li class="kss-parameters__item">
-                            <p class="kss-parameters__description">
-                                #58FA58; Confirm Green
+                </div>
 
-                            </p>
-                            <code class="kss-parameters__name">$highlight-green</code>
-                        </li>
-                        <li class="kss-parameters__item">
-                            <p class="kss-parameters__description">
-                                #d50000; Danger / Cancel Red
+                <ul class="kss-parameters">
+                    <li class="kss-parameters__item">
+                        <p class="kss-parameters__description">
+                            #1460aa; Primary Blue
+                        </p>
+                        <code class="kss-parameters__name">
+                            $highlight-blue
+                        </code>
+                    </li>
+                    <li class="kss-parameters__item">
+                        <p class="kss-parameters__description">
+                            #58FA58; Confirm Green
+                        </p>
+                        <code class="kss-parameters__name">
+                            $highlight-green
+                        </code>
+                    </li>
+                    <li class="kss-parameters__item">
+                        <p class="kss-parameters__description">
+                            #d50000; Danger / Cancel Red
+                        </p>
+                        <code class="kss-parameters__name">
+                            $highlight-red
+                        </code>
+                    </li>
+                </ul>
+            </article>
 
-                            </p>
-                            <code class="kss-parameters__name">$highlight-red</code>
-                        </li>
-                    </ul>
-                </article>
 
+    </header>
+</section>
+        <!-- scripts. -->
+<script src="kss-assets/vendor/jquery.js"></script>
+<script src="kss-assets/vendor/prism.js"></script>
+<script src="kss-assets/js/kss.js"></script>
+<script src="kss-assets/js/openModal.js"></script>
 
-        </header>
-    </section>
-    <!-- /documentation. -->
-
-
-</body>
 <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
 <script type="text/javascript">
     new ClipboardJS('.clipboard-btn');
 </script>
 
+<script src="kss-assets/js/kss.js"></script>
+
+<!-- /scripts. -->
+</body>
 </html>

@@ -19,8 +19,6 @@
 </head>
 
 <body class="kss-body">
-
-    <!-- header. -->
             <header class="kss-header">
         <section class="kss-header__inner">
             <a class="kss-header__hamburger-trigger">
@@ -28,19 +26,11 @@
             </a>
         </section>
     </header>
-    <!-- /header. -->
-
-    <!-- navigation. -->
         <section class="nav-sidebar">
             <img
                 class="nav-sidebar-logo"
                 src="https://avatars0.githubusercontent.com/u/31484249?s=460&v=4"
                 alt="Mult-e Logo">
-            <span class="nav-sidebar-tittle">
-                Styleguide
-                <br>
-                Mult-e
-            </span>
             <ul class="kss-nav">
                 <li class="kss-nav__item">
                     <a href="index.html">
@@ -74,91 +64,140 @@
                     </li>
             </ul>
         </section>
-    <!-- /navigation. -->
+        <section class="kss-documentation">
 
-    <!-- documentation. -->
-    <section class="kss-documentation">
-
-        <!-- display each section, in order. the "root" element comes first in this
+    <!-- display each section, in order. the "root" element comes first in this
                 loop, and can be detected using the "#if @first" block as seen below. -->
-        <header class="kss-section kss-section--depth-1" id="kssref-buttons">
+    <header class="kss-section kss-section--depth-1" id="kssref-buttons">
 
-                <article class="kss-section__content">
-                    <p class="kss-section__source">Source:
-                        <span>css-components/components/buttons.scss</span>, line
-                        <span>1</span></p>
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source:
+                    <span>
+                        css-components/components/_btn.scss
+                    </span>, line
+                    <span>
+                        1
+                    </span>
+                </p>
 
-                    <a class="kss-section__permalink" href="#kssref-buttons">
-                        <h 1 class="kss-section__item kss-section__item--depth-1">
-                            <span class="kss-section__ref">1</span>
-                            <span class="kss-section__name">Buttons</span>
-                        </h 1>
+                <a class="kss-section__permalink" href="#kssref-buttons">
+                    <h 1 class="kss-section__item kss-section__item--depth-1">
+                        <span class="kss-section__ref">
+                            1
+                        </span>
+
+                        <span class="kss-section__name">
+                            Buttons
+                        </span>
+                    </h 1>
+                </a>
+
+
+            </article>
+
+            <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Exemplos
+                </h1>
+
+                <h2 class="kss-modifiers__name">
+                    Estilo Padrão
+                </h2>
+
+                <div class="kss-modifiers__example">
+                    <button class="btn ">BUTTON ELEMENT</button>
+                </div>
+                <div class="div-markup">
+                    <code id="clipboard-default-0" class="language-markup">
+                        &lt;button class&#x3D;&quot;btn &quot;&gt;BUTTON ELEMENT&lt;/button&gt;
+                    </code>
+                    <a class="clipboard-btn" data-clipboard-target="#clipboard-default-0">
+                        <i class="fas fa-clipboard"></i>
                     </a>
+                </div>
 
+                <article class="kss-modifiers__modifier">
+                    <p class="kss-modifiers__description">
+                        Botão Verde
+                    </p>
 
-                </article>
+                    <h2 class="kss-modifiers__name">
+                        .btn-green
+                    </h2>
+                    
+                    <div class="kss-modifiers__example">
+                        <button class="btn btn-green">BUTTON ELEMENT</button>
+                    </div>
 
-                <article class="kss-section__modifiers">
-                    <h1 class="kss-modifiers__heading">Exemplos
-                    </h1>
-
-                    <h2 class="kss-modifiers__name">Estilo Padrão</h2>
-
-                    <div class="kss-modifiers__example"><button class="btn ">BUTTON ELEMENT</button></div>
                     <div class="div-markup">
-                        <code id="clipboard-default-0" class="language-markup">&lt;button class&#x3D;&quot;btn &quot;&gt;BUTTON ELEMENT&lt;/button&gt;</code>
-                        <a class="clipboard-btn" data-clipboard-target="#clipboard-default-0">
+                        <code id="clipboard-0" class="language-markup">
+                            &lt;button class&#x3D;&quot;btn btn-green&quot;&gt;BUTTON ELEMENT&lt;/button&gt;
+                        </code>
+                        <a class="clipboard-btn" data-clipboard-target="#clipboard-0">
                             <i class="fas fa-clipboard"></i>
                         </a>
                     </div>
-
-                    <article class="kss-modifiers__modifier">
-                        <p class="kss-modifiers__description">Botão Verde</p>
-                        <h2 class="kss-modifiers__name">.btn-green</h2>
-                        <div class="kss-modifiers__example"><button class="btn btn-green">BUTTON ELEMENT</button></div>
-                        <div class="div-markup">
-                            <code id="clipboard-0" class="language-markup">&lt;button class&#x3D;&quot;btn btn-green&quot;&gt;BUTTON ELEMENT&lt;/button&gt;</code>
-                            <a class="clipboard-btn" data-clipboard-target="#clipboard-0">
-                                <i class="fas fa-clipboard"></i>
-
-                            </a>
-                        </div>
-                    </article>
-                    <article class="kss-modifiers__modifier">
-                        <p class="kss-modifiers__description">Botão Large</p>
-                        <h2 class="kss-modifiers__name">.btn-large</h2>
-                        <div class="kss-modifiers__example"><button class="btn btn-large">BUTTON ELEMENT</button></div>
-                        <div class="div-markup">
-                            <code id="clipboard-1" class="language-markup">&lt;button class&#x3D;&quot;btn btn-large&quot;&gt;BUTTON ELEMENT&lt;/button&gt;</code>
-                            <a class="clipboard-btn" data-clipboard-target="#clipboard-1">
-                                <i class="fas fa-clipboard"></i>
-
-                            </a>
-                        </div>
-                    </article>
-                    <article class="kss-modifiers__modifier">
-                        <p class="kss-modifiers__description">Botão Médio</p>
-                        <h2 class="kss-modifiers__name">.btn-medium</h2>
-                        <div class="kss-modifiers__example"><button class="btn btn-medium">BUTTON ELEMENT</button></div>
-                        <div class="div-markup">
-                            <code id="clipboard-2" class="language-markup">&lt;button class&#x3D;&quot;btn btn-medium&quot;&gt;BUTTON ELEMENT&lt;/button&gt;</code>
-                            <a class="clipboard-btn" data-clipboard-target="#clipboard-2">
-                                <i class="fas fa-clipboard"></i>
-
-                            </a>
-                        </div>
-                    </article>
                 </article>
+                <article class="kss-modifiers__modifier">
+                    <p class="kss-modifiers__description">
+                        Botão Large
+                    </p>
 
-        </header>
-    </section>
-    <!-- /documentation. -->
+                    <h2 class="kss-modifiers__name">
+                        .btn-large
+                    </h2>
+                    
+                    <div class="kss-modifiers__example">
+                        <button class="btn btn-large">BUTTON ELEMENT</button>
+                    </div>
 
+                    <div class="div-markup">
+                        <code id="clipboard-1" class="language-markup">
+                            &lt;button class&#x3D;&quot;btn btn-large&quot;&gt;BUTTON ELEMENT&lt;/button&gt;
+                        </code>
+                        <a class="clipboard-btn" data-clipboard-target="#clipboard-1">
+                            <i class="fas fa-clipboard"></i>
+                        </a>
+                    </div>
+                </article>
+                <article class="kss-modifiers__modifier">
+                    <p class="kss-modifiers__description">
+                        Botão Médio
+                    </p>
 
-</body>
+                    <h2 class="kss-modifiers__name">
+                        .btn-medium
+                    </h2>
+                    
+                    <div class="kss-modifiers__example">
+                        <button class="btn btn-medium">BUTTON ELEMENT</button>
+                    </div>
+
+                    <div class="div-markup">
+                        <code id="clipboard-2" class="language-markup">
+                            &lt;button class&#x3D;&quot;btn btn-medium&quot;&gt;BUTTON ELEMENT&lt;/button&gt;
+                        </code>
+                        <a class="clipboard-btn" data-clipboard-target="#clipboard-2">
+                            <i class="fas fa-clipboard"></i>
+                        </a>
+                    </div>
+                </article>
+            </article>
+
+    </header>
+</section>
+        <!-- scripts. -->
+<script src="kss-assets/vendor/jquery.js"></script>
+<script src="kss-assets/vendor/prism.js"></script>
+<script src="kss-assets/js/kss.js"></script>
+<script src="kss-assets/js/openModal.js"></script>
+
 <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
 <script type="text/javascript">
     new ClipboardJS('.clipboard-btn');
 </script>
 
+<script src="kss-assets/js/kss.js"></script>
+
+<!-- /scripts. -->
+</body>
 </html>

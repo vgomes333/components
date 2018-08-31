@@ -7,7 +7,7 @@
     box-shadow: -10px 0 10px 10px rgba($black, 0.5);
     box-sizing: border-box;
     height: 100%;
-    background: $white;
+    background: #F5DA81;
     transform: translateX(-100%);
     transition: transform 0.3s ease-out;
 
@@ -33,7 +33,7 @@
     }
 
     .nav-sidebar-logo{
-      height: 110px;
+      height: 80px;
       margin: 15px;
     }
 

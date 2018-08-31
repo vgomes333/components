@@ -49,7 +49,7 @@
   -webkit-perspective: 1000;
   -webkit-backface-visibility: hidden;
   -webkit-transform: translate3d(0, 0, 0);
-  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   transition: all 0.4s; }
   .kss-header__hamburger:before, .kss-header__hamburger:after {
     content: '';
@@ -83,7 +83,7 @@
   box-shadow: -10px 0 10px 10px rgba(34, 34, 34, 0.5);
   box-sizing: border-box;
   height: 100%;
-  background: #FFFFFF;
+  background: #F5DA81;
   transform: translateX(-100%);
   transition: transform 0.3s ease-out; }
   @media only screen and (min-width: 48.0625em) {
@@ -102,7 +102,7 @@
   .nav-sidebar.kss-state-active {
     transform: none; }
   .nav-sidebar .nav-sidebar-logo {
-    height: 110px;
+    height: 80px;
     margin: 15px; }
   .nav-sidebar .nav-sidebar-tittle {
     position: absolute;

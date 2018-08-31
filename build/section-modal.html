@@ -19,8 +19,6 @@
 </head>
 
 <body class="kss-body">
-
-    <!-- header. -->
             <header class="kss-header">
         <section class="kss-header__inner">
             <a class="kss-header__hamburger-trigger">
@@ -28,19 +26,11 @@
             </a>
         </section>
     </header>
-    <!-- /header. -->
-
-    <!-- navigation. -->
         <section class="nav-sidebar">
             <img
                 class="nav-sidebar-logo"
                 src="https://avatars0.githubusercontent.com/u/31484249?s=460&v=4"
                 alt="Mult-e Logo">
-            <span class="nav-sidebar-tittle">
-                Styleguide
-                <br>
-                Mult-e
-            </span>
             <ul class="kss-nav">
                 <li class="kss-nav__item">
                     <a href="index.html">
@@ -74,38 +64,50 @@
                     </li>
             </ul>
         </section>
-    <!-- /navigation. -->
+        <section class="kss-documentation">
 
-    <!-- documentation. -->
-    <section class="kss-documentation">
-
-        <!-- display each section, in order. the "root" element comes first in this
+    <!-- display each section, in order. the "root" element comes first in this
                 loop, and can be detected using the "#if @first" block as seen below. -->
-        <header class="kss-section kss-section--depth-1" id="kssref-modal">
+    <header class="kss-section kss-section--depth-1" id="kssref-modal">
 
-                <article class="kss-section__content">
-                    <p class="kss-section__source">Source:
-                        <span>css-components/components/modal.scss</span>, line
-                        <span>1</span></p>
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source:
+                    <span>
+                        css-components/components/_modal.scss
+                    </span>, line
+                    <span>
+                        1
+                    </span>
+                </p>
 
-                    <a class="kss-section__permalink" href="#kssref-modal">
-                        <h 1 class="kss-section__item kss-section__item--depth-1">
-                            <span class="kss-section__ref">2</span>
-                            <span class="kss-section__name">Modal</span>
-                        </h 1>
-                    </a>
+                <a class="kss-section__permalink" href="#kssref-modal">
+                    <h 1 class="kss-section__item kss-section__item--depth-1">
+                        <span class="kss-section__ref">
+                            2
+                        </span>
 
-                    <div class="kss-section__description"><p>Descrição do Componente</p>
-</div>
+                        <span class="kss-section__name">
+                            Modal
+                        </span>
+                    </h 1>
+                </a>
 
-                </article>
+                <div class="kss-section__description
+                            
+                            ">
+                    <p>Descrição do Componente</p>
 
-                <article class="kss-section__modifiers">
-                    <h1 class="kss-modifiers__heading">Exemplo
-                    </h1>
+                </div>
+
+            </article>
+
+            <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Exemplo
+                </h1>
 
 
-                    <div class="kss-modifiers__example"><button class="btn" id="btnModal">Open Modal</button>
+                <div class="kss-modifiers__example">
+                    <button class="btn" id="btnModal">Open Modal</button>
 <div class="modal" id="modal">
  <div class="modal-box">
      <div class="modal-header">
@@ -121,9 +123,11 @@
          <button class="btn btn-green">Confirmar</button>
      </div>
  </div>
-</div></div>
-                    <div class="div-markup">
-                        <code id="clipboard-default-0" class="language-markup">&lt;button class&#x3D;&quot;btn&quot; id&#x3D;&quot;btnModal&quot;&gt;Open Modal&lt;/button&gt;
+</div>
+                </div>
+                <div class="div-markup">
+                    <code id="clipboard-default-0" class="language-markup">
+                        &lt;button class&#x3D;&quot;btn&quot; id&#x3D;&quot;btnModal&quot;&gt;Open Modal&lt;/button&gt;
 &lt;div class&#x3D;&quot;modal&quot; id&#x3D;&quot;modal&quot;&gt;
  &lt;div class&#x3D;&quot;modal-box&quot;&gt;
      &lt;div class&#x3D;&quot;modal-header&quot;&gt;
@@ -139,23 +143,30 @@
          &lt;button class&#x3D;&quot;btn btn-green&quot;&gt;Confirmar&lt;/button&gt;
      &lt;/div&gt;
  &lt;/div&gt;
-&lt;/div&gt;</code>
-                        <a class="clipboard-btn" data-clipboard-target="#clipboard-default-0">
-                            <i class="fas fa-clipboard"></i>
-                        </a>
-                    </div>
+&lt;/div&gt;
+                    </code>
+                    <a class="clipboard-btn" data-clipboard-target="#clipboard-default-0">
+                        <i class="fas fa-clipboard"></i>
+                    </a>
+                </div>
 
-                </article>
+            </article>
 
-        </header>
-    </section>
-    <!-- /documentation. -->
+    </header>
+</section>
+        <!-- scripts. -->
+<script src="kss-assets/vendor/jquery.js"></script>
+<script src="kss-assets/vendor/prism.js"></script>
+<script src="kss-assets/js/kss.js"></script>
+<script src="kss-assets/js/openModal.js"></script>
 
-
-</body>
 <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
 <script type="text/javascript">
     new ClipboardJS('.clipboard-btn');
 </script>
 
+<script src="kss-assets/js/kss.js"></script>
+
+<!-- /scripts. -->
+</body>
 </html>
