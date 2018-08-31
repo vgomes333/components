@@ -45,6 +45,9 @@ class KssBuilderHandlebars extends KssBuilderBaseHandlebars {
    * Create a builder object.
    */
   constructor() {
+    var hbs = require('hbs');
+
+hbs.registerPartial('nav', '../../layouts/nav.hbs');
     // First call the constructor of KssBuilderBaseHandlebars.
     super();
 

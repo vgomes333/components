@@ -5,7 +5,9 @@
   "main": "bundle.js",
   "dependencies": {
     "clipboard": "^2.0.1",
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "gulp-file-include": "^2.0.1",
+    "hbs": "^4.0.1"
   },
   "devDependencies": {
     "browser-sync": "^2.24.7",
