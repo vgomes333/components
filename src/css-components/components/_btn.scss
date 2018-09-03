@@ -4,8 +4,11 @@
 // <button class="btn {{modifier_class}}">BUTTON ELEMENT</button>
 //
 // .btn-green - Botão Verde
+// .btn-yellow - Botão Amarelo
+// .btn-red - Botão Vermelho
 // .btn-large - Botão Large
 // .btn-medium - Botão Médio
+// .btn-small - Botão Pequeno
 // 
 //  
 // Styleguide Buttons
@@ -25,21 +28,21 @@
     background-color: #FFF;
     border-color: #d7d7d7;
 
-    // STATES
-    &:disabled {
-        cursor: not-allowed;
-        opacity: 0.6;
-    }
-
-    &:hover {
-        opacity: 0.8;
-    }
-
     // COLORS
     &-green {
         color: #fff;
         background-color: #42AE5D;
         border-color: #42AE5D;
+    }
+
+    &-red{
+        color: #fff;
+        background-color: #FA5858;
+    }
+
+    &-yellow{
+        color: #585858;
+        background-color: #F4FA58;
     }
 
 
@@ -57,5 +60,10 @@
     &-large {
         font-size: 20px;
         padding: 8px 12px;
+    }
+
+    &-small{
+        font-size: 12px;
+        padding: 5px 5px;
     }
 }

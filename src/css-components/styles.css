@@ -12,15 +12,16 @@
   cursor: pointer;
   background-color: #FFF;
   border-color: #d7d7d7; }
-  .btn:disabled {
-    cursor: not-allowed;
-    opacity: 0.6; }
-  .btn:hover {
-    opacity: 0.8; }
   .btn-green {
     color: #fff;
     background-color: #42AE5D;
     border-color: #42AE5D; }
+  .btn-red {
+    color: #fff;
+    background-color: #FA5858; }
+  .btn-yellow {
+    color: #585858;
+    background-color: #F4FA58; }
   .btn-block {
     display: block; }
   .btn-medium {
@@ -29,6 +30,9 @@
   .btn-large {
     font-size: 20px;
     padding: 8px 12px; }
+  .btn-small {
+    font-size: 12px;
+    padding: 5px 5px; }
 
 .modal {
   position: fixed;
