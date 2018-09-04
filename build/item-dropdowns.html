@@ -48,7 +48,7 @@
                     </li>
                     <li class="kss-nav__item">
                         <a
-                            class="kss-state-active"
+                            class=""
                             href="section-colors.html">
                             <span class="kss-nav__ref">2</span>
                             <span class="kss-nav__name">Colors</span>
@@ -56,11 +56,19 @@
                     </li>
                     <li class="kss-nav__item">
                         <a
-                            class=""
+                            class="kss-state-active"
                             href="section-dropdowns.html">
                             <span class="kss-nav__ref">3</span>
                             <span class="kss-nav__name">Dropdowns</span>
                         </a>
+                                <ul class="kss-nav__subnav">
+                                        <li class="kss-nav__item ">
+                                            <a href="section-dropdowns.html#kssref-dropdowns-dropups">
+                                                <span class="kss-nav__ref">3.1</span>
+                                                <span class="kss-nav__name">Dropups</span>
+                                            </a>
+                                        </li>
+                                </ul>
                     </li>
                     <li class="kss-nav__item">
                         <a
@@ -76,65 +84,69 @@
 
     <!-- display each section, in order. the "root" element comes first in this
                 loop, and can be detected using the "#if @first" block as seen below. -->
-    <header class="kss-section kss-section--depth-1" id="kssref-colors">
+    <header class="kss-section kss-section--depth-1" id="kssref-dropdowns">
 
             <article class="kss-section__content">
                 <p class="kss-section__source">Source:
                     <span>
-                        css-components/_colors.scss
+                        css-components/components/_dropdowns.scss
                     </span>, line
                     <span>
                         1
                     </span>
                 </p>
 
-                <a class="kss-section__permalink" href="#kssref-colors">
+                <a class="kss-section__permalink" href="#kssref-dropdowns">
                     <h 1 class="kss-section__item kss-section__item--depth-1">
                         <span class="kss-section__ref">
-                            2
+                            3
                         </span>
 
                         <span class="kss-section__name">
-                            Colors
+                            Dropdowns
                         </span>
                     </h 1>
                 </a>
 
-                <div class="kss-section__description
-                            
-                            ">
-                    <p>Colors we use for higlighting states.</p>
 
-                </div>
-
-                <ul class="kss-parameters">
-                    <li class="kss-parameters__item">
-                        <p class="kss-parameters__description">
-                            #1460aa; Primary Blue
-                        </p>
-                        <code class="kss-parameters__name">
-                            $highlight-blue
-                        </code>
-                    </li>
-                    <li class="kss-parameters__item">
-                        <p class="kss-parameters__description">
-                            #58FA58; Confirm Green
-                        </p>
-                        <code class="kss-parameters__name">
-                            $highlight-green
-                        </code>
-                    </li>
-                    <li class="kss-parameters__item">
-                        <p class="kss-parameters__description">
-                            #d50000; Danger / Cancel Red
-                        </p>
-                        <code class="kss-parameters__name">
-                            $highlight-red
-                        </code>
-                    </li>
-                </ul>
             </article>
 
+            <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Exemplo
+                </h1>
+
+
+                <div class="kss-modifiers__example">
+                    <div class="dropdown">
+ <button onclick="openDropdown()" class="btn btn-dropdown">
+    Dropdown
+    <i class="fas fa-caret-down"></i>
+   </button>
+ <div id="dropdown-items" class="dropdown-content">
+   <a href="#">Link 1</a>
+   <a href="#">Link 2</a>
+   <a href="#">Link 3</a>
+ </div>
+</div>
+                </div>
+                <div class="div-markup">
+                    <code id="clipboard-default-0" class="language-markup">&lt;div class&#x3D;&quot;dropdown&quot;&gt;
+ &lt;button onclick&#x3D;&quot;openDropdown()&quot; class&#x3D;&quot;btn btn-dropdown&quot;&gt;
+    Dropdown
+    &lt;i class&#x3D;&quot;fas fa-caret-down&quot;&gt;&lt;/i&gt;
+   &lt;/button&gt;
+ &lt;div id&#x3D;&quot;dropdown-items&quot; class&#x3D;&quot;dropdown-content&quot;&gt;
+   &lt;a href&#x3D;&quot;#&quot;&gt;Link 1&lt;/a&gt;
+   &lt;a href&#x3D;&quot;#&quot;&gt;Link 2&lt;/a&gt;
+   &lt;a href&#x3D;&quot;#&quot;&gt;Link 3&lt;/a&gt;
+ &lt;/div&gt;
+&lt;/div&gt;</code>
+                    <a class="clipboard-btn" data-clipboard-target="#clipboard-default-0">
+                        COPY CODE
+                    </a>
+                </div>
+
+            </article>
 
     </header>
 </section>
