@@ -1,0 +1,41 @@
+// Alerts
+// 
+// Markup:
+// <div class="alert {{modifier_class}}">
+//   <span class="closebtn"><i class="far fa-times-circle"></i></span>  
+//   <strong>Alerta!</strong> Mensagem.
+// </div>
+// 
+// .success - Sucesso
+// .info - Informação
+// .warning - Atenção
+// 
+// Styleguide Alerts
+
+.alert {
+    padding: 20px;
+    background-color: #F78181;
+    color: #fff;
+    opacity: 1;
+    transition: opacity 0.6s;
+    margin-bottom: 15px;
+}
+
+.alert.success {background-color: #81F781;}
+.alert.info {background-color: #81BEF7;}
+.alert.warning {background-color: #FAAC58;}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
+}
