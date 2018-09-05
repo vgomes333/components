@@ -1,0 +1,39 @@
+$headerHeight: 60px;
+
+.top-header{
+	position: fixed;
+	display: block;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: $headerHeight;
+	background-color: #F5DA81;
+	color: #424242;
+	box-shadow: 1px 0 9px 1px rgba(34, 34, 34, 0.5);
+	z-index: 11;
+	
+	&-div{
+		margin-left: 15px;
+	}
+	
+	&-logo{
+		height: 32px;
+		position: absolute;
+		top: 15px;
+		left: 15px;
+	}
+	
+	&-logo-name{
+		position: absolute;
+		font-size: 32px;
+		font-weight: 700;
+		left: 60px;
+		top: 9px;
+		margin-right: 0.26cm;
+	}
+	
+	&-btn-hamburger{
+		font-size: 32px;
+		cursor: pointer;
+	}
+}

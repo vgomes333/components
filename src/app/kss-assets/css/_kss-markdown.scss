@@ -2,6 +2,7 @@ $kss-markdown-headings-color: $mult-e;
 
 
 .kss-markdown {
+  padding-top: $headerHeight;
   overflow-y: auto;
   overflow-x: hidden;
   max-width: 800px;
