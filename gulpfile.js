@@ -15,12 +15,13 @@ gulp.task('server', ['kss'], function () {
         
     });
 
+    gulp.watch('src/app/kss-assets/css/*.scss',['kss']).on('change', browserSync.reload);
     gulp.watch('src/css-components/**/*.scss',['kss']).on('change',browserSync.reload);
     gulp.watch('src/app/templates/**/*.hbs',['kss']).on('change', browserSync.reload);
 });
 
 // Cria a pasta build
-gulp.task('kss',['sass'], function() {    
+gulp.task('kss',['sassapp'], function() {    
     gulp.src('./src/css-components/styles.css')
     .pipe(gulp.dest('./build/kss-assets/css'));
 
@@ -41,6 +42,13 @@ gulp.task('kss',['sass'], function() {
     .pipe(gulp.dest('src/css-components/'))
     .pipe(browserSync.stream());
     });
+
+    gulp.task('sassapp',function(){
+        return gulp.src('src/app/kss-assets/css/kss.scss')
+        .pipe(sass().on('error', sass.logError))
+        .pipe(gulp.dest('src/app/kss-assets/css/'))
+        .pipe(browserSync.stream());
+        });
     
     // Apaga a pasta build
     gulp.task('clean',function () {
