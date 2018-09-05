@@ -21,7 +21,7 @@ gulp.task('server', ['kss'], function () {
 });
 
 // Cria a pasta build
-gulp.task('kss',['sassapp'], function() {    
+gulp.task('kss',['sass'], function() {    
     gulp.src('./src/css-components/styles.css')
     .pipe(gulp.dest('./build/kss-assets/css'));
 

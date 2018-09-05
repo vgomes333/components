@@ -1,0 +1,38 @@
+// Breadcrumbs
+// 
+// Markup:
+//<ul class="breadcrumb">
+//  <li><a href="#">Home</a></li>
+//  <li><a href="#">Pictures</a></li>
+//  <li><a href="#">StarWars</a></li>
+//  <li>DarthVader</li>
+//</ul>
+// 
+// Styleguide Breadcrumbs
+
+.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: #eee;
+
+    li {
+        display: inline;
+        font-size: 18px;
+    }
+
+    li+li:before {
+        padding: 8px;
+        color: black;
+        content: "/\00a0";
+    }
+
+    li a {
+        color: #0275d8;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        color: #01447e;
+        text-decoration: underline;
+    }
+}

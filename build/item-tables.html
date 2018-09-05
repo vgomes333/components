@@ -83,7 +83,7 @@
                     </li>
                     <li class="kss-nav__item">
                         <a
-                            class=""
+                            class="kss-state-active"
                             href="section-tables.html">
                             <span class="kss-nav__ref">7</span>
                             <span class="kss-nav__name">Tables</span>
@@ -95,28 +95,28 @@
 
     <!-- display each section, in order. the "root" element comes first in this
                 loop, and can be detected using the "#if @first" block as seen below. -->
-    <header class="kss-section kss-section--depth-2" id="kssref-dropdowns-dropups">
+    <header class="kss-section kss-section--depth-1" id="kssref-tables">
 
             <article class="kss-section__content">
                 <p class="kss-section__source">Source:
                     <span>
-                        css-components/components/_dropdowns.scss
+                        css-components/components/_tables.scss
                     </span>, line
                     <span>
-                        48
+                        1
                     </span>
                 </p>
 
-                <a class="kss-section__permalink" href="#kssref-dropdowns-dropups">
-                    <h 2 class="kss-section__item kss-section__item--depth-2">
+                <a class="kss-section__permalink" href="#kssref-tables">
+                    <h 1 class="kss-section__item kss-section__item--depth-1">
                         <span class="kss-section__ref">
-                            5.1
+                            7
                         </span>
 
                         <span class="kss-section__name">
-                            Dropups
+                            Tables
                         </span>
-                    </h 2>
+                    </h 1>
                 </a>
 
 
@@ -128,30 +128,52 @@
 
 
                 <div class="kss-modifiers__example">
-                    <div class="dropup">
- <button onclick="openDropup()" class="btn btn-dropup">
-    Dropup
-    <i class="fas fa-caret-up"></i>
-   </button>
- <div id="dropup-items" class="dropup-content">
-   <a href="#">Link 1</a>
-   <a href="#">Link 2</a>
-   <a href="#">Link 3</a>
- </div>
-</div>
+                    <table>
+ <tr>
+   <th>Company</th>
+   <th>Contact</th>
+   <th>Country</th>
+ </tr>
+ <tr>
+   <td>Alfreds Futterkiste</td>
+   <td>Maria Anders</td>
+   <td>Germany</td>
+ </tr>
+ <tr>
+   <td>Centro comercial Moctezuma</td>
+   <td>Francisco Chang</td>
+   <td>Mexico</td>
+ </tr>
+ <tr>
+   <td>Ernst Handel</td>
+   <td>Roland Mendel</td>
+   <td>Austria</td>
+ </tr>
+</table>
                 </div>
                 <div class="div-markup">
-                    <code id="clipboard-default-0" class="language-markup">&lt;div class&#x3D;&quot;dropup&quot;&gt;
- &lt;button onclick&#x3D;&quot;openDropup()&quot; class&#x3D;&quot;btn btn-dropup&quot;&gt;
-    Dropup
-    &lt;i class&#x3D;&quot;fas fa-caret-up&quot;&gt;&lt;/i&gt;
-   &lt;/button&gt;
- &lt;div id&#x3D;&quot;dropup-items&quot; class&#x3D;&quot;dropup-content&quot;&gt;
-   &lt;a href&#x3D;&quot;#&quot;&gt;Link 1&lt;/a&gt;
-   &lt;a href&#x3D;&quot;#&quot;&gt;Link 2&lt;/a&gt;
-   &lt;a href&#x3D;&quot;#&quot;&gt;Link 3&lt;/a&gt;
- &lt;/div&gt;
-&lt;/div&gt;</code>
+                    <code id="clipboard-default-0" class="language-markup">&lt;table&gt;
+ &lt;tr&gt;
+   &lt;th&gt;Company&lt;/th&gt;
+   &lt;th&gt;Contact&lt;/th&gt;
+   &lt;th&gt;Country&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+   &lt;td&gt;Alfreds Futterkiste&lt;/td&gt;
+   &lt;td&gt;Maria Anders&lt;/td&gt;
+   &lt;td&gt;Germany&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+   &lt;td&gt;Centro comercial Moctezuma&lt;/td&gt;
+   &lt;td&gt;Francisco Chang&lt;/td&gt;
+   &lt;td&gt;Mexico&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+   &lt;td&gt;Ernst Handel&lt;/td&gt;
+   &lt;td&gt;Roland Mendel&lt;/td&gt;
+   &lt;td&gt;Austria&lt;/td&gt;
+ &lt;/tr&gt;
+&lt;/table&gt;</code>
                     <a class="clipboard-btn" data-clipboard-target="#clipboard-default-0">
                         COPY CODE
                     </a>
